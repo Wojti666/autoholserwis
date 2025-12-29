@@ -1,0 +1,232 @@
+/* ========================================
+   CENNIK PAGE - Additional Styles
+   ======================================== */
+
+/* Cennik Hero */
+.cennik-hero {
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+	background: linear-gradient(to bottom, hsl(var(--background-dark)), hsl(var(--background)));
+	text-align: center;
+}
+
+.cennik-hero-content {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.cennik-title {
+	font-family: var(--font-heading);
+	font-weight: 800;
+	font-size: clamp(2rem, 5vw, 3.5rem);
+	color: hsl(var(--foreground));
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.cennik-subtitle {
+	color: hsl(var(--muted-foreground));
+	font-size: 1.125rem;
+	line-height: 1.7;
+}
+
+/* Cennik Section */
+.cennik-section {
+	padding: 3rem 0 5rem;
+	background: hsl(var(--background));
+}
+
+/* Price Category */
+.price-category {
+	background: hsl(var(--card));
+	border: 1px solid hsl(var(--border));
+	border-radius: 1rem;
+	overflow: hidden;
+	margin-bottom: 2rem;
+	transition: var(--transition);
+}
+
+.price-category:hover {
+	border-color: hsla(var(--primary) / 0.5);
+	// box-shadow: var(--shadow-glow);
+	box-shadow: 0 0 30px hsla(var(--primary) / 0.1);
+}
+
+.category-header {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.5rem;
+	background: hsla(var(--primary) / 0.05);
+	border-bottom: 1px solid hsl(var(--border));
+}
+
+.category-icon {
+	width: 3rem;
+	height: 3rem;
+	background: hsla(var(--primary) / 0.15);
+	border-radius: 0.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: hsl(var(--primary));
+}
+
+.category-icon i {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.category-title {
+	font-family: var(--font-heading);
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: hsl(var(--foreground));
+	margin: 0;
+}
+
+/* Price Table */
+.price-table {
+	padding: 0.5rem 0;
+}
+
+.price-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.25rem 1.5rem;
+	border-bottom: 1px solid hsla(var(--border) / 0.5);
+	transition: var(--transition);
+}
+
+.price-row:last-child {
+	border-bottom: none;
+}
+
+.price-row:hover {
+	background: hsla(var(--primary) / 0.03);
+}
+
+.service-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	flex: 1;
+	min-width: 0;
+}
+
+.service-name {
+	font-weight: 600;
+	color: hsl(var(--foreground));
+	font-size: 1rem;
+}
+
+.service-desc {
+	font-size: 0.875rem;
+	color: hsl(var(--muted-foreground));
+}
+
+.service-price {
+	font-size: 1rem;
+	color: hsl(var(--muted-foreground));
+	white-space: nowrap;
+	padding-left: 1rem;
+}
+
+.service-price strong {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: hsl(var(--primary));
+}
+
+/* CTA */
+.cennik-cta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	padding: 3rem 2rem;
+	background: linear-gradient(135deg, hsla(var(--primary) / 0.1), hsla(var(--primary) / 0.05));
+	border: 1px solid hsla(var(--primary) / 0.3);
+	border-radius: 1rem;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.cta-content {
+	max-width: 400px;
+}
+
+.cta-title {
+	font-family: var(--font-heading);
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: hsl(var(--foreground));
+	margin: 0 0 0.5rem;
+}
+
+.cta-text {
+	color: hsl(var(--muted-foreground));
+	margin: 0;
+}
+
+.cennik-cta .btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+/* Active nav link */
+.nav-link.active,
+.mobile-link.active {
+	color: hsl(var(--primary));
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+	.cennik-hero {
+		padding-top: 10rem;
+		padding-bottom: 5rem;
+	}
+
+	.price-row {
+		padding: 1.5rem 2rem;
+	}
+
+	.service-name {
+		font-size: 1.125rem;
+	}
+
+	.cennik-cta {
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+		padding: 2.5rem 3rem;
+	}
+
+	.cta-content {
+		max-width: 500px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.desktop-menu {
+		display: flex;
+	}
+
+	.mobile-controls {
+		display: none;
+	}
+
+	.price-category {
+		margin-bottom: 2.5rem;
+	}
+
+	.category-header {
+		padding: 2rem;
+	}
+
+	.category-title {
+		font-size: 1.75rem;
+	}
+}
