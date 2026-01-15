@@ -297,7 +297,8 @@ ul {
 .hero-badge {
 	display: inline-flex;
 	align-items: center;
-	gap: 0.5rem;
+	// justify-content: center;
+	// gap: 0.5rem;
 	background: hsla(var(--primary) / 0.1);
 	border: 1px solid hsla(var(--primary) / 0.3);
 	border-radius: 9999px;
@@ -305,13 +306,16 @@ ul {
 	margin-bottom: 1.5rem;
 }
 
-.badge-dot {
-	width: 0.5rem;
-	height: 0.5rem;
-	background: hsl(var(--primary));
-	border-radius: 50%;
-	animation: pulse 2s infinite;
-}
+// .badge-dot {
+// 	font-size: 0.875rem;
+// 	color: hsl(var(--primary));
+
+// 	// width: 0.5rem;
+// 	// height: 0.5rem;
+// 	// background: hsl(var(--primary));
+// 	// border-radius: 50%;
+// 	// animation: pulse 2s infinite;
+// }
 
 .badge-text {
 	color: hsl(var(--primary));
@@ -696,6 +700,11 @@ section {
 	color: hsl(var(--primary));
 }
 
+.service-subtitle {
+	margin-bottom: 1rem;
+	color: hsl(var(--muted-foreground));
+}
+
 .service-list {
 	display: flex;
 	flex-direction: column;
@@ -724,9 +733,20 @@ section {
 	gap: 0.5rem;
 	color: hsl(var(--primary));
 	font-weight: 600;
-	text-decoration: underline;
-	text-underline-offset: 4px;
+	border: 1px solid hsl(var(--primary) / 0.2);
+	// border: 1px solid hsl(var(--border));
+	background: hsla(var(--primary) / 0.1);
+
+	border-radius: 1rem;
+	padding: 1rem 2rem;
+	// text-decoration: underline;
+	// text-underline-offset: 4px;
 	transition: var(--transition);
+}
+
+.service-card-cta:hover{
+	border: 1px solid hsl(var(--primary) / 0.8);
+
 }
 
 .services-cta {
